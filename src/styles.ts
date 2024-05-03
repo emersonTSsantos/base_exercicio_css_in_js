@@ -1,11 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
-  :root {
-    color: #a7727d;
-    background-color: #f9f5e7;
-  }
-
   * {
     margin: 0;
     padding: 0;
@@ -16,21 +11,18 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     padding-bottom: 120px;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-principal);
   }
-
-  .container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 1024px) {
-    .container {
-      max-width: 80%;
-    }
-  }
-`
+  `
 
 export default GlobalStyles
+
+export const Container = styled.div`
+  max-width: 1024px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    max-width: 80%;
+  }
+`

@@ -20,16 +20,26 @@ export const HeroWrapper = styled.form`
     opacity: 0.7;
   }
 
+  div {
+    position: relative;
+    color: ${(props) => props.theme.CorTextoHero};
+    font-family: Gloock, serif;
+    font-size: 28px;
+  }
+
   @media (max-width: 768px) {
     height: auto;
     padding: 24px 0;
+
+    div {
+      font-size: 32px;
+    }
   }
 `
 
 export const HeroTitle = styled.h2`
   font-family: Gloock, serif;
   font-size: 48px;
-  color: #eee;
 
   @media (max-width: 768px) {
     font-size: 32px;

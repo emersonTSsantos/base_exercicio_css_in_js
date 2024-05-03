@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ListaVagasWrapper = styled.div`
+export const ListaVagasWrapper = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;

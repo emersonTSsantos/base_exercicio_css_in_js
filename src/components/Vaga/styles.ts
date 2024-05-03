@@ -11,6 +11,16 @@ export const VagaWrapper = styled.li`
   &:hover {
     background-color: ${(props) => props.theme.corPrincipal};
     color: ${(props) => props.theme.corSecundaria};
+
+    a {
+      border-color: ${(props) => props.theme.corPrincipal};
+      background-color: ${(props) => props.theme.corSecundaria};
+      color: ${(props) => props.theme.corPrincipal};
+    }
+  }
+
+  li {
+    list-style: none;
   }
 `
 
@@ -34,11 +44,5 @@ export const VagaLink = styled.a`
 
   @media (max-width: 768px) {
     display: block;
-  }
-
-  &:hover {
-    border-color: ${(props) => props.theme.corPrincipal};
-    background-color: ${(props) => props.theme.corSecundaria};
-    color: ${(props) => props.theme.corPrincipal};
   }
 `

@@ -1,13 +1,13 @@
-import React from 'react'
+import { Container } from '../../styles'
 import { HeroWrapper, HeroTitle } from './styles'
 
 const Hero = () => (
   <HeroWrapper>
-    <div className="container">
+    <Container>
       <HeroTitle>
         As melhores vagas para tecnologia, design e artes visuais.
       </HeroTitle>
-    </div>
+    </Container>
   </HeroWrapper>
 )
 

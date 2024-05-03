@@ -1,6 +1,7 @@
 const temaLight = {
-  corPrincipal: '#282a35',
-  corSecundaria: '#949494'
+  corPrincipal: '#a7727d',
+  corSecundaria: '#f9f5e7',
+  CorTextoHero: '#eee'
 }
 
 export default temaLight

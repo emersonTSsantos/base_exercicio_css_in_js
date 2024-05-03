@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Titulo = styled.h1`
+export const Titulo = styled.header`
   background-color: ${(props) => props.theme.corSecundaria};
   color: ${(props) => props.theme.corPrincipal};
   text-align: center;
